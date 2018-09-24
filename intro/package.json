@@ -1,0 +1,27 @@
+{
+  "name": "curso_node",
+  "version": "1.0.0",
+  "description": "Curso Node.js API c/ Restify e mongodb",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigoboni/curso_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigoboni/curso_node/issues"
+  },
+  "homepage": "https://github.com/rodrigoboni/curso_node#readme",
+  "dependencies": {
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.10.3",
+    "@types/yargs": "^12.0.0"
+  }
+}
