@@ -4,7 +4,7 @@ Curso Node.js API c/ Restify e mongodb
 # NPM
 * init modulo gerenciado pelo npm com defaults - npm init -y 
 * instalar modulo para dev apenas - npm i --save-dev (ou -D)
-* instalar modulo para runtime - npm i --save
+* instalar modulo para runtime - npm i --save (ou -P)
 * add param -E para indicar no package.json que deve sempre baixar a versão indicada da dependência - ex npm i restify@6.3.4 --save -E
 
 # Compilador TS
@@ -46,11 +46,10 @@ Curso Node.js API c/ Restify e mongodb
 * typescript hero
 * vscode great icons
 
-# Restify
-* Obs comentários no código do projeto para dicas
-
-# Restify - objeto response:
-* json - encapsula chamadas aos métodos setContentType('application/json') + send({obj}) + status(200)
-* setContentType - encapsula chamada ao método setHeader('Content-Type', 'application/json');
-* send - define body do response - define contenttype a partir de avaliação do conteúdo - então ao enviar obj define como json
-* status - define status do response
+#mongodb
+* db.collection.insert(obj)
+* db.collection.find([{attr:value}])
+* db.collection.findOne([{attr:value}])
+* db.collection.update({attr:value}, obj)
+* db.collection.update({attr:value}, {'$set':obj})
+* db.collection.find({attr:/regex/}) - "like"
