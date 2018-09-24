@@ -1,9 +1,9 @@
 # curso_node
 Curso Node.js API c/ Restify e mongodb
 
-# Resumo / comandos úteis
+# NPM
 * init modulo gerenciado pelo npm com defaults - npm init -y 
-* instalar modulo para dev apenas - npm i --save-dev
+* instalar modulo para dev apenas - npm i --save-dev (ou -D)
 * instalar modulo para runtime - npm i --save
 
 # Compilador TS
