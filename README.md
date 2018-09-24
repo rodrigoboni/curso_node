@@ -45,3 +45,12 @@ Curso Node.js API c/ Restify e mongodb
 * search node_modules
 * typescript hero
 * vscode great icons
+
+# Restify
+* Obs comentários no código do projeto para dicas
+
+# Restify - objeto response:
+* json - encapsula chamadas aos métodos setContentType('application/json') + send({obj}) + status(200)
+* setContentType - encapsula chamada ao método setHeader('Content-Type', 'application/json');
+* send - define body do response - define contenttype a partir de avaliação do conteúdo - então ao enviar obj define como json
+* status - define status do response
