@@ -5,9 +5,11 @@ Curso Node.js API c/ Restify e mongodb
 * init modulo gerenciado pelo npm com defaults - npm init -y 
 * instalar modulo para dev apenas - npm i --save-dev (ou -D)
 * instalar modulo para runtime - npm i --save
+* add param -E para indicar no package.json que deve sempre baixar a versão indicada da dependência - ex npm i restify@6.3.4 --save -E
 
 # Compilador TS
 * compilador typescript - tsc (-w p/ watchdog arquivos e compilar js)
+* tsc --init - inicializa compilador e cria arquivo tsconfig.json default
 * arquivo tsconfig.json com configurações para compilação
 * target - definir como es6
 * outDir - definir pasta (dist por ex) para geração dos js compilados
@@ -19,10 +21,16 @@ Curso Node.js API c/ Restify e mongodb
 * usar chrome://inspect e conectar a instância do node
 
 # Pacotes úteis
+* nodemon - monitor de projetos node (inst global)
 * typescript - compilador typescript x js
 * yargs - gerenciador de parametros de linha de comando
+* restify - framework api rest
 * @types/node - pacote de definições TS p/ pacotes comuns js
 * @types/yargs - pacote definiçoes do yargs
+* @types/restify
+
+# Comandos úteis
+* nodemon - disparar projeto e monitorar por alterações
 
 # Extensoes vscode úteis
 * eslint
