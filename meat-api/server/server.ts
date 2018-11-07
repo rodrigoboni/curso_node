@@ -7,6 +7,8 @@ import {Router} from '../common/router'
 import * as mongoose from 'mongoose'
 
 export class Server {
+  // o ! após o nome do atributo indica ao compilador TS que o atributo será inicializado
+  // o ts tenta garantir que todos os atributos sejam inicializados, mas neste caso não consegue aferir automaticamente a ini deste attr
   application!: restify.Server; // restify server instance
 
   /**
@@ -55,6 +57,8 @@ export class Server {
    * @param routers array of routers
    */
   bootstrap(routers: Router[] = []): Promise<Server> {
+    // chama métodos para inicialização em geral
+    // e retorna a própria instância desta classe já configurada
     return this.initializeDb()
       .then(()=> this.initRoutes(routers).then(() => this))
   }

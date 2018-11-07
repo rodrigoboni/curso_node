@@ -8,7 +8,7 @@ import {usersRouter} from './users/users.router'
 const server = new Server()
 
 // array of routers
-const routers = [usersRouter];
+const routers = [usersRouter]
 
 // server startup
 server.bootstrap(routers).then(server=>{

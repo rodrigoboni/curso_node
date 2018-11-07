@@ -49,6 +49,8 @@ class Server {
      * @param routers array of routers
      */
     bootstrap(routers = []) {
+        // chama métodos para inicialização em geral
+        // e retorna a própria instância desta classe já configurada
         return this.initializeDb()
             .then(() => this.initRoutes(routers).then(() => this));
     }
