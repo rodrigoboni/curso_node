@@ -38,6 +38,7 @@ export class Server {
 
         // routes
         for(let router of routers) {
+          // para cada router passa a instância do servidor / app p/ config das rotas
           router.applyRoutes(this.application)
         }
 
@@ -56,7 +57,7 @@ export class Server {
    * Server bootstrap
    * @param routers array of routers
    */
-  bootstrap(routers: Router[] = []): Promise<Server> {
+  bootstrap(routers: Router[] = []): Promise<Server> { // default array vazio
     // chama métodos para inicialização em geral
     // e retorna a própria instância desta classe já configurada
     return this.initializeDb()

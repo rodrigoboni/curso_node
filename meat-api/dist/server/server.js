@@ -31,6 +31,7 @@ class Server {
                 this.application.use(restify.plugins.queryParser()); //parser de querystring
                 // routes
                 for (let router of routers) {
+                    // para cada router passa a instância do servidor / app p/ config das rotas
                     router.applyRoutes(this.application);
                 }
                 // start servidor na porta indicada

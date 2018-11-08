@@ -1,5 +1,7 @@
 /**
  * User router
+ * 
+ * rotas / endpoints para o recurso users
  */
 import * as restify from 'restify'
 import {Router} from '../common/router'
@@ -7,6 +9,8 @@ import {User} from './users.model'
 
 class UsersRouter extends Router {
   applyRoutes(application: restify.Server) {
+
+    // TODO Criar controllers / arquivos a parte para implementação dos métodos, extraindo do router
 
     application.get('/users', (req, resp, next)=>{
       User.findAll().then(users=>{
