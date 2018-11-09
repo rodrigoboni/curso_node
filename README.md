@@ -46,7 +46,6 @@ Curso Node.js API c/ Restify e mongodb
 
 # Extensoes vscode úteis
 * eslint
-* tslint
 * gitlens
 * gitblame
 * javascript(es6) code snippets
