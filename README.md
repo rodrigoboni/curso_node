@@ -2,8 +2,9 @@
 Curso Node.js API c/ Restify e mongodb
 
 # NPM
-* init modulo gerenciado pelo npm com defaults - npm init -y 
+* init modulo gerenciado pelo npm com defaults - npm init -y
 * instalar modulo para dev apenas - npm i --save-dev (ou -D)
+    * módulos de definição TS por exemplo podem ser instalados como dev apenas
 * instalar modulo para runtime - npm i --save (ou -P)
 * add param -g p/ instalação global
 * add param -E para indicar no package.json que deve sempre baixar a versão indicada da dependência - ex npm i restify@6.3.4 --save -E
@@ -18,14 +19,25 @@ Curso Node.js API c/ Restify e mongodb
 * obs este detalhe ao dev, pode estar utilizando uma dependencia que vc não espera...
 
 # Compilador TS
-* compilador typescript - tsc 
+* instalar: npm i typescript -g
+* compilador typescript - tsc
 * tsc -w p/ watchdog arquivos e compilar js sob demanda
 * tsc --init - inicializa compilador e cria arquivo tsconfig.json default
-* arquivo tsconfig.json com configurações para compilação
+
+# Config compilador TS (tsconfig.json)
 * target - definir como es6
 * outDir - definir pasta (dist por ex) para geração dos js compilados
 * sourceMap - definir como true para gerar mapa para debug com codigo ts em vez do js gerado
 * esModuleInterop - comentar ou desabilitar para manter js usando commonjs para import / export (require e exports)
+
+# Definições de módulos node para TS
+* Para aproveitar o esquema de tipagem do TS, é necessário ter conjuntos de definições dos módulos do node em TS
+* a MS tem projeto opensource com conjuntos de definições - estão no repositório do npm
+* instalar os módulos como dev apenas, já que em runtime o código é transpilado em js
+* Módulos:
+    * @types/node - pacote de definições TS p/ pacotes comuns js (instal global e savedev)
+    * @types/yargs - pacote definiçoes do yargs
+    * @types/restify (instal global e savedev)
 
 # Debug
 * node --inspect-brk (pausa execução até conexão de app debug)
@@ -33,13 +45,9 @@ Curso Node.js API c/ Restify e mongodb
 * usar chrome://inspect e conectar a instância do node
 
 # Pacotes úteis
-* nodemon - monitor de projetos node (inst global)
-* typescript - compilador typescript x js (inst global)
 * yargs - gerenciador de parametros de linha de comando
 * restify - framework api rest
-* @types/node - pacote de definições TS p/ pacotes comuns js (instal global e savedev)
-* @types/yargs - pacote definiçoes do yargs
-* @types/restify (instal global e savedev)
+* nodemon - monitor de projetos node (inst global)
 
 # Comandos úteis
 * nodemon - disparar projeto e monitorar por alterações
@@ -57,8 +65,9 @@ Curso Node.js API c/ Restify e mongodb
 * search node_modules
 * typescript hero
 * vscode great icons
+* eclipse keymap
 
-#mongodb
+# mongodb
 * db.collection.insert(obj)
 * db.collection.find([{attr:value}])
 * db.collection.findOne([{attr:value}])
