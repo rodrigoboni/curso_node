@@ -12,6 +12,6 @@ fs.writeFile(argv.filename, argv.content, (error) => {
     if (error) {
         throw error;
     }
-    
+
     console.log(`Arquivo ${argv.filename} foi salvo com sucesso.`);
 })
